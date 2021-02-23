@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
-* [Gettin started](#get-started)
+* [Getting started](#get-started)
 * [Technologies](#technologies)
 * [Sources](#sources)
 
