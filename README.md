@@ -8,10 +8,18 @@ Reading the first chapter of the Thesis.pdf above should do the trick.
 The project I supported can be found at: https://sourceforge.net/projects/alevin/ <br>
 I have extracted the project documentation for you (again above).
 
-- Titles and internal titles <br>
-- Introduction - the project's aim <br>
-Technologies <br>
-Launch <br>
+## - Titles and internal titles <br>
+## - Introduction - the project's aim <br>
+## Technologies <br>
+## Launch <br>
+
+## Table of contents <br>
+## Illustrations <br>
+## Scope of functionalities <br>
+## Examples of use <br>
+## Project status <br>
+## Sources <br>
+## Other information <br>
 
 
 
