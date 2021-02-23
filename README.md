@@ -1,5 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
+* [Gettin started](#get-started)
 * [Technologies](#technologies)
 * [Sources](#sources)
 
@@ -9,20 +10,19 @@ Interested in genetic algorithms or a starting point to explore the internet of 
 Reading the first chapter of the Thesis.pdf above should do the trick. <p>
 
 ## Sources
-The project I supported can be found at: https://sourceforge.net/projects/alevin/ <br>
-I have extracted the project developer documentation for you (again above).
+The project I supported can be found at: https://sourceforge.net/projects/alevin/ from where I used v2.2 <br>
 
-### Titles and internal titles <br>
-### Introduction - the project's aim <br>
+## Get started
+I have extracted the developer documentation from the ALEVIN2 project for you as well as their official README in externalREADME above. <br>
+Their README includes all necessary information about requirements, installation, features and their basic directory structure.
+
 ### Technologies <br>
-### Launch <br>
+Technologies I personally have used are Java, JUnit, Gradle and Eclipse.
 
-### Table of contents <br>
 ### Illustrations <br>
 ### Scope of functionalities <br>
 ### Examples of use <br>
 ### Project status <br>
-### Sources <br>
 ### Other information <br>
 
 
