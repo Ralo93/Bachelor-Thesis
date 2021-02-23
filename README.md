@@ -27,7 +27,4 @@ Technologies I personally have used are Java, JUnit, Gradle and Eclipse. For all
 Inactive.
 ## Exclaimer <br>
 I felt like saying that my actual code is very messy. This was the first major open source project I tried to support with very little programming knowledge. While managing to get the GUI actually running my algorithm (after a challenging installation procedure for newcomers) and getting my expected results after partly minutes of runtime, I no longer had the strength to refactor anything. <p>
-So I dare you to have a look at my Genetic Algorithm monster!
-
-
-
+I remember affectionately calling it "the battlefield".
