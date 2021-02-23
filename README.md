@@ -10,9 +10,7 @@ Reading the first chapter of the Thesis.pdf above should do the trick. <p>
 
 ## Sources
 The project I supported can be found at: https://sourceforge.net/projects/alevin/ <br>
-I have extracted the project documentation for you (again above).
-
-
+I have extracted the project developer documentation for you (again above).
 
 ### Titles and internal titles <br>
 ### Introduction - the project's aim <br>
