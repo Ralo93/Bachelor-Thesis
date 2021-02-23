@@ -1,9 +1,9 @@
-# ====== ALEVIN - ALgorithms for Embedding Virtual Networks ======
+====== ALEVIN - ALgorithms for Embedding Virtual Networks ======
 
 Recommended IDE:
 Eclipse version 3.5 or higher
 
-# ===== Requirements =====
+===== Requirements =====
 
   * JUNG 2.0.1 or newer, http://jung.sf.net
   * JUnit 4.5 or newer, http://www.junit.org
@@ -17,7 +17,7 @@ respective entries in ".classpath" to reflect the system wide location of the
 respective libraries. Alternatively, in *nix systems it should be possible to
 create symlinks in the lib/ folder to point to the right JAR file.
 
-# ===== Installation =====
+===== Installation =====
 
   * Run the ANT script build.xml (either from console or from Eclipse)
   * This will create the following files in the base directory
@@ -30,7 +30,7 @@ create symlinks in the lib/ folder to point to the right JAR file.
 !! folder.
 
 
-# ===== Running ALEVIN =====
+===== Running ALEVIN =====
 
 After running the build script, there are two options:
   * Inside of Eclipse, you can now simply run the vnreal.Main class
@@ -41,7 +41,7 @@ After running the build script, there are two options:
   * For running a large number of tests without GUI have a look at the files in
     src/tests/generatorTests/
 
-# ===== Features =====
+===== Features =====
 
   * An XML-based scenario import and export, including
     * Topology data
@@ -53,7 +53,7 @@ After running the build script, there are two options:
     * Advanced graph editing and creation
       * Adding of resource/demands to network entities
 
-# ===== Basic Structure =====
+===== Basic Structure =====
 
 The Java package structure for this project looks like:
   * ''AUTHORS'' -- A list of contributors to this software and their affiliations
@@ -78,7 +78,7 @@ The Java package structure for this project looks like:
   * ''tools'' -- Some scripts to evaluate results
 
   
-# ===== Known Issues / Limitations =====
+===== Known Issues / Limitations =====
  
   * Each demand only occupies a single resource.
   * jsc.jar (http://www.jsc.nildram.co.uk/downloads/download.html) is used in
