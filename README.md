@@ -14,8 +14,7 @@ Reading the first chapter of the Thesis.pdf above should do the trick! <p>
 The project I supported can be found at: https://sourceforge.net/projects/alevin/ from where I used v2.2. <br>
 
 ## Get started
-I have extracted the developer documentation from the ALEVIN2 project for you as well as their official README in exREADME above. <br>
-Their README includes all necessary information about requirements, installation, running ALEVIN, features and their basic directory structure. <br>
+I have extracted the developer documentation from the ALEVIN2 project for you as well as their official README in exREADME above. Their README includes all necessary information about requirements, installation, running ALEVIN, features and their basic directory structure. <br>
 
 ### Technologies <br>
 Technologies I personally have used are Java, JUnit, Gradle and Eclipse. For all the technologies involved check the exREADME.md.
