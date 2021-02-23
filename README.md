@@ -14,7 +14,7 @@ The project I supported can be found at: https://sourceforge.net/projects/alevin
 
 ## Get started
 I have extracted the developer documentation from the ALEVIN2 project for you as well as their official README in externalREADME above. <br>
-Their README includes all necessary information about requirements, installation, features and their basic directory structure.
+Their README includes all necessary information about requirements, installation, running ALEVIN, features and their basic directory structure.
 
 ### Technologies <br>
 Technologies I personally have used are Java, JUnit, Gradle and Eclipse.
