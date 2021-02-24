@@ -20,7 +20,10 @@ I have extracted the developer documentation from the ALEVIN2 project for you as
 Technologies I personally have used are Java, JUnit, Gradle and Eclipse. For all the technologies involved check the exREADME.md.
 
 ## Illustrations <br>
-![VNEDone](https://user-images.githubusercontent.com/78420756/108925416-da72bd00-763c-11eb-8901-96a9566b2554.jpg | width =100) <br>
+![test image size](https://user-images.githubusercontent.com/78420756/108925416-da72bd00-763c-11eb-8901-96a9566b2554.jpg){:class="img-responsive"}
+![test image size](https://user-images.githubusercontent.com/78420756/108925416-da72bd00-763c-11eb-8901-96a9566b2554.jpg){:height="50%" width="50%"}
+![test image size](https://user-images.githubusercontent.com/78420756/108925416-da72bd00-763c-11eb-8901-96a9566b2554.jpg){:height="700px" width="400px"}
+![VNEDone](https://user-images.githubusercontent.com/78420756/108925416-da72bd00-763c-11eb-8901-96a9566b2554.jpg) <br>
 ![MoremidDiagram](https://user-images.githubusercontent.com/78420756/108925333-b2835980-763c-11eb-9033-9397d4b76256.jpg)
 ![DiaNeu](https://user-images.githubusercontent.com/78420756/108925264-8b2c8c80-763c-11eb-8d94-02c0e188d9f8.jpg)
 ## Examples of use <br>
