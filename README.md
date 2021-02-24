@@ -22,7 +22,8 @@ Technologies I personally have used are Java, JUnit, Gradle and Eclipse. For all
 ## Illustrations <br>
 -- following --
 ## Examples of use <br>
--- following --
+![sourceforge_ALEVIN2](https://user-images.githubusercontent.com/78420756/108924910-e7db7780-763b-11eb-92cd-ad2c4151790e.png)
+
 ## Project status <br>
 Wrap up.
 ## Exclaimer <br>
