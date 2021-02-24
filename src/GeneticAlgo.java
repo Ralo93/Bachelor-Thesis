@@ -529,68 +529,11 @@ public class GeneticAlgo extends AbstractSequentialAlgorithm<VirtualNetwork> {
 
 		}
 
-		// XYSeriesCollection data = new XYSeriesCollection(series);
-		// JFreeChart chart = ChartFactory.createXYLineChart(
-
-		// "Minimal Fitness Per Generation",
-		// "Generation",
-		// "minimal fitness value",
-		// data,
-		// PlotOrientation.VERTICAL,
-		// true,
-		// true,
-		// false
-
-		// );
-
-		// Die naechsten 4 aktivieren und alles davor.
-//		ChartPanel chartPanel = new ChartPanel(chart);
-//		chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
-
-//		chartPanel.setDomainZoomable(true);
-//		chartPanel.setVisible(true);
-
-		// JPanel pan = new JPanel();
-
-		// pan.add(chartPanel, BorderLayout.CENTER);
-		// pan.setLayout(new java.awt.BorderLayout());
-		// pan.validate();
-
-		// pan.setVisible(true);
-
-		// Die naechsten 5 aktivieren.
-		// JDialog dia = new JDialog();
-		// dia.setTitle("Convergence of VN");
-		// dia.setSize(450, 300);
-
-		// dia.add(chartPanel);
-
-		// dia.setVisible(true);
-
-		// JFrame frame = new JFrame("Chart");
-
-		// frame.setSize(600, 400);
-		// frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		// frame.setVisible(true);
-		// frame.getContentPane().add(chartPanel);
-
-		// RefineryUtilities.centerFrameOnScreen();
-
-		// FINAL RETURN
+	
 
 		System.out.println("Definitely the BEST: ");
 		// series.add(popCounter, currentBestC.getFitness());
 		currentBestC.printChr();
-
-		// public Mapping(AbstractDemand dem, AbstractResource res) {
-		// this.demand = dem;
-		// demand.register(this);
-
-		// this.resource = res;
-		// resource.register(this);
-		// }
-
 		// Mapping i.e. Occupying the Node resources of the Chromosome
 
 		Map<VirtualNode, SubstrateNode> finalMap = chrToMap(this.ns.getSubstrate(), v, currentBestC);
