@@ -7,7 +7,7 @@
 
 ## General info
 Interested in genetic algorithms or a starting point to explore the internet of tomorrow? <br>
-Reading the first chapter of the Thesis.pdf above should do the trick! <br>
+Reading the first chapter of the BachelorThesis.pdf above should do the trick! <br>
 This project includes all files associated with my bachelor thesis - implementing a genetic algorithm for the virtual network embedding problem - , covering the PDF version of my thesis, the implemented code and an introduction to the ALEVIN2 environment. <p>
 
 ## Sources
