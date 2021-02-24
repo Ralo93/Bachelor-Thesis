@@ -131,39 +131,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		System.out.println("LocalBetter: " + this.localSuccess);
 		System.out.println("LocalHero: " + this.localSuccessFin);
 	}
-
-//	protected Chromosome easyInit(Chromosome c, SubstrateNetwork sn, VirtualNetwork vn, Map<VirtualNode, Integer> mapp) {
-//		double[] hostvector = c.getHVector();
-
-//		List<SubstrateNode> untouchedsubs = new LinkedList<SubstrateNode>();
-//		for (SubstrateNode n : sn.getVertices()) {
-//			n.setTouched(false);
-//		}
-
-	// for (int i = 0; i < hostvector.length; i++) {
-	// if (((long)hostvector[i] == (long) n.getId())) {
-	// n.setTouched(true);
-//					System.out.println("SNode set to touched");
-	// continue;
-	// } else {
-	// untouchedsubs.add(n);
-	// continue;
-	// }
-	// }
-//			System.out.println("A substrate node with touched: " + n.getTouched() + " and ID: " + n.getId());	
-	// }
-
-//		Queue<VirtualNode> pq = new LinkedList<VirtualNode>();
-//		int i = 0;
-//		for (VirtualNode vno : vn.getVertices()) {	
-	// Nimm virtuellen knoten mit diesem index und pack ihn in PQ
-//				pq.add(vno);
-//				System.out.println("Virtual Node with ID: " + vno.getId() + " added to Queue!");
-	// i++;
-//		}
-
-//	}
-
 	// Algorithm 1 von Mi et al. 2012
 	// stellt eine verbesserte Initialisierung dar, der parameter mapp sind
 	// die indizes der VNodes des VNR
@@ -172,16 +139,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 			Map<VirtualNode, Integer> mapp) {
 		double[] hostvector = c.getHVector();
 		boolean[] statevector = c.getSVector();
-		// System.out.println("The VirtualNetwork: " + vn);
-
-		// System.out.println("THIS IS ALGO1!");
-		// for (double d : hostvector) {
-		// System.out.println("The value of the hostvector for every entry: " +
-		// String.valueOf(d));
-		// }
-		// for (boolean d : statevector) {
-		// System.out.println("The value of the statevector for every entry: " + d);
-		// }
 
 		List<SubstrateNode> untouchedsubs = new LinkedList<SubstrateNode>();
 		for (SubstrateNode n : sn.getVertices()) {
@@ -232,11 +189,7 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		originalPositionLook(vn, pq, pqRanking, originalPosition, mapp);
 
 		Map<VirtualNode, Double> sortedPQ = MiscelFunctions.sortByValue(pqRanking);
-		// System.out.println("This is sorted now: " + sortedPQ);
-		// Map<SubstrateNode, Double> sortedUntRank =
-		// MiscelFunctions.sortByValue(untouchedRanking);
-		// System.out.println("This is sorted now: " + sortedUntRank);
-		// Siehe Schritt 4 in algo1
+
 		Iterator<VirtualNode> nodesIt = sortedPQ.keySet().iterator();
 //		Iterator<VirtualNode> origIt = originalPosition.keySet().iterator();
 		// System.out.println("SUBSTRATE: " + sn);
@@ -276,11 +229,7 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		Map<SubstrateNode, Double> sortedSN = MiscelFunctions.sortByValue(untouchedRanking);
 
 		Map<VirtualNode, Double> sortedPQ = MiscelFunctions.sortByValue(pqRanking);
-		// System.out.println("This is sorted now: " + sortedPQ);
-		// Map<SubstrateNode, Double> sortedUntRank =
-		// MiscelFunctions.sortByValue(untouchedRanking);
-		// System.out.println("This is sorted now: " + sortedUntRank);
-		// Siehe Schritt 4 in algo1
+
 		Iterator<VirtualNode> nodesIt = sortedPQ.keySet().iterator();
 		Iterator<SubstrateNode> sNodesIt = sortedSN.keySet().iterator();
 
@@ -769,27 +718,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 				if (chr == currentBestC) {
 					continue;
 				}
-//				
-				// System.out.println("BEFORE new algo1 fitness: " + chr.getFitness());
-
-				// Nochmals alle chromosomen updaten ausser das beste
-				// Chromosome clone = doAlgo1(chr, this.ns.getSubstrate(), v, original);
-				// clone.setFeasibile(isFeasibile(this.ns.getSubstrate(), v, clone));
-
-				// if (clone.getFitness() < gBest) {
-
-				// currentBestC = clone;
-				// gBest = clone.getFitness();
-
-				// }
-
-//				System.out.println("Solo print Gen " + i);
-//				chr.printChr();
-			}
-//			for (Chromosome p : population) {
-			// System.out.println("Again just for me: " + p.getFitness());
-			//
-			// }
 
 			if (currentBestC != null) {
 				System.out.println("Gen " + i + " Best mit GBest :" + gBest + " und CBC.fitness: "
@@ -804,24 +732,7 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 
 		}
 		
-		// for(Chromosome c : population) {
-		// Chromosome tmp = new Chromosome(currentBestC.getLength());
-		// tmp = currentBestC;
-		// tmp = localSearchFirstBest(tmp, this.ns.getSubstrate(), v, this.ns);
-		// if (tmp.getFitness() < currentBestC.getFitness() && tmp.getFeasibile()) {
 
-		// currentBestC = tmp;
-		// localSuccess++;
-		//TODO
-	//	Chromosome tmp = new Chromosome(currentBestC.getLength());
-	//	tmp = currentBestC;
-	//	tmp = localSearchAllBest(tmp, this.ns.getSubstrate(), v, this.ns);
-		//if (tmp.getFitness() < currentBestC.getFitness()) {
-
-			//currentBestC = tmp;
-			//localSuccessFin++;
-
-	//	}
 		
 	//	datei.writeData(popCounter, currentBestC.getFitness());
 		
@@ -851,69 +762,11 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 
 		}
 
-		// XYSeriesCollection data = new XYSeriesCollection(series);
-		// JFreeChart chart = ChartFactory.createXYLineChart(
-
-		// "Minimal Fitness Per Generation",
-		// "Generation",
-		// "minimal fitness value",
-		// data,
-		// PlotOrientation.VERTICAL,
-		// true,
-		// true,
-		// false
-
-		// );
-
-		// Die naechsten 4 aktivieren und alles davor.
-//		ChartPanel chartPanel = new ChartPanel(chart);
-//		chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
-
-//		chartPanel.setDomainZoomable(true);
-//		chartPanel.setVisible(true);
-
-		// JPanel pan = new JPanel();
-
-		// pan.add(chartPanel, BorderLayout.CENTER);
-		// pan.setLayout(new java.awt.BorderLayout());
-		// pan.validate();
-
-		// pan.setVisible(true);
-
-		// Die naechsten 5 aktivieren.
-		// JDialog dia = new JDialog();
-		// dia.setTitle("Convergence of VN");
-		// dia.setSize(450, 300);
-
-		// dia.add(chartPanel);
-
-		// dia.setVisible(true);
-
-		// JFrame frame = new JFrame("Chart");
-
-		// frame.setSize(600, 400);
-		// frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		// frame.setVisible(true);
-		// frame.getContentPane().add(chartPanel);
-
-		// RefineryUtilities.centerFrameOnScreen();
-
 		// FINAL RETURN
 
 		System.out.println("Definitely the BEST: ");
 		// series.add(popCounter, currentBestC.getFitness());
 		currentBestC.printChr();
-
-		// public Mapping(AbstractDemand dem, AbstractResource res) {
-		// this.demand = dem;
-		// demand.register(this);
-
-		// this.resource = res;
-		// resource.register(this);
-		// }
-
-		// Mapping i.e. Occupying the Node resources of the Chromosome
 
 		Map<VirtualNode, SubstrateNode> finalMap = chrToMap(this.ns.getSubstrate(), v, currentBestC);
 
@@ -954,15 +807,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		} catch (IOException e) {
 			System.out.println("Writing error!");
 			e.printStackTrace();
-			// } finally {
-			// try {
-			// writer.flush();
-			// writer.close();
-
-			// } catch (IOException e) {
-			// System.out.println("Flushing or closing error");
-			// e.printStackTrace();
-			// }
 
 		}
 
@@ -1048,25 +892,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		Iterator<Chromosome> iterator = coQ.iterator();
 
 		damnIt = reinitializeUnfeasibile(sn, v, mapp, damnIt, newGeneration, iterator);
-		// Siehe Schritt 3 Reinitialization: Alle non feasibile gehen direkt in neachste
-		// generation
-//		for (Chromosome c : coQ) {
-		// Reinitialization Step
-		// if (c.getFitness() == Double.POSITIVE_INFINITY) {
-		// System.out.println("Size before removing: " + coQ.size());
-		// coQ.remove(c);
-		// c.setZero();
-		// c = doAlgo1(c, sn, v, mapp);
-		// c.setRandomState();
-		// newGeneration[damnIt] = c;
-		// System.out.println("Bad fitness for this chomi! New Initialization and into
-		// newGeneration done.");
-		// System.out.println("Size before removing: " + coQ.size());
-		// coQ.remove(c);
-		// System.out.println("Size after removing: " + coQ.size());
-		// damnIt++;
-		// }
-		// }
 
 		System.out.println("How many in coQ: " + coQ.size());
 
@@ -1113,14 +938,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 			// One point crossover happens for 80% of the time
 			simpleCO(pc, vector1, vector2, GivingNodes, ReceivingNodes, CoolNodes1, CoolNodes2);
 
-			// List<List<SubstrateNode>> mutationNodes1 = new
-			// LinkedList<List<SubstrateNode>>();
-
-			// List<SubstrateNode> possible = new LinkedList<SubstrateNode>();
-			// List<SubstrateNode> possible2 = new LinkedList<SubstrateNode>();
-			// List<SubstrateNode> gone = new LinkedList<SubstrateNode>();
-			// List<SubstrateNode> mutationNodes2 = new LinkedList<SubstrateNode>();
-			// original C for finding possible mutation nodes after CO
 			Chromosome arg1 = new Chromosome(vector1.length, vector1, coQ.get(0).getSVector());
 			Chromosome arg2 = new Chromosome(vector2.length, vector2, coQ.get(other).getSVector());
 //			System.out.println("THIS NEW");
@@ -1488,9 +1305,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 			// end1[i] = vector1[i];
 
 		}
-//		System.out.println("Cut1 :" + cut + " Cut2: " + cut2);
-//		System.out.println("Swath1: " + Arrays.toString(firstSwath));
-//		System.out.println("Swath2: " + Arrays.toString(secondSwath));
 
 		for (int i = cut; i < cut2; i++) {
 			pos = 0;
@@ -1748,15 +1562,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 
 			Chromosome tmp1 = new Chromosome(vector1.length, vector1, parent1.getSVector());
 			Chromosome tmp2 = new Chromosome(vector2.length, vector2, parent2.getSVector());
-			// coQ.get(0).setHostvector(vector1);
-			// coQ.get(other).setHostvector(vector2);
-			//
-
-			// tmp1.setFeasibile(isFeasibile(sn, v, tmp1));
-			// tmp2.setFeasibile(isFeasibile(sn, v, tmp2));
-
-			// tmp1 = localSearchFirstBest(tmp1, sn, v, ns);
-			// tmp2 = localSearchFirstBest(tmp2, sn, v, ns);
 
 			System.out.println("aNEWCrossover chromi1: ");
 			tmp1.printChr();
@@ -1770,12 +1575,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 			damnIt++;
 			newGen[damnIt] = tmp2;
 			damnIt++;
-
-			// Chromosome child1 = pmxCO(parent1, parent2);
-			// Chromosome child2 = pmxCO(parent2, parent1);
-
-			// Chromosome endChild1 = goodMutation(child1);
-			// Chromosome endChild2 = goodMutation(child2);
 
 		}
 	//	Chromosome[] finalPop = new Chromosome[population.length];
@@ -1997,84 +1796,6 @@ public class GeneticAlgo2 extends AbstractSequentialAlgorithm<VirtualNetwork> {
 		}
 		return mapping;
 	}
-
-//	public SubstrateNetwork copyNetwork(SubstrateNetwork copyFrom) {
-
-	// Neues Netzwerk
-//		SubstrateNetwork sn1 = new SubstrateNetwork();
-//		for (SubstrateNode sNode : copyFrom.getVertices()) {
-
-	// Fuer jeden knoten einen neuen knoten
-//			SubstrateNode SNODE = new SubstrateNode();
-
-	// Fuer jede resource wird sie hinzugefuegt
-//			for (AbstractResource res : sNode.get()) {
-
-//				SNODE.add(res.getCopy(sNode, false));
-
-//				for (Mapping m : res.getMappings()) {
-
-//					AbstractDemand d = m.getDemand();
-//					
-//					for ( AbstractResource RES : SNODE.get()) {
-//
-//						if ( RES instanceof CpuResource) {
-//							
-//							d.occupy(RES);	
-//						}
-//					}
-//				}
-//			}
-//			
-//			sn1.addVertex(SNODE);
-//		}
-//		
-//		for (SubstrateLink sLink : copyFrom.getEdges()) {
-//				
-//			SubstrateLink SLINK = new SubstrateLink();
-//			SubstrateNode source = copyFrom.getSource(sLink);
-//			SubstrateNode dest = copyFrom.getDest(sLink);
-//			
-//			SubstrateNode newSource = new SubstrateNode();
-//			SubstrateNode newDest = new SubstrateNode();
-//			
-//			
-//			for (SubstrateNode Snode : sn1.getVertices()) {
-//				
-//				if (Snode.getId() == source.getId()) {
-//					
-//					newSource = Snode;
-//				}
-//				if (Snode.getId() == dest.getId()) {
-//					
-//					newDest = Snode;
-//				}	
-//			}
-
-//			sn1.addEdge(SLINK, newSource, newDest);
-//			
-//			for (AbstractResource res : sLink.get()) {
-//				
-//				
-//				
-//				SLINK.add(res);
-//								
-//				for (Mapping m : res.getMappings()) {
-//					
-//					AbstractDemand d = m.getDemand();
-//					
-//					for ( AbstractResource RES : SLINK.get()) {
-//						
-//						if ( RES instanceof BandwidthResource) {
-//							
-//							d.occupy(RES);	
-//						}
-//					}
-//				}
-//			}
-//		}	
-//		return sn1;
-//	}
 
 	// Feasibility-Check: kShortestPath for the Chromosom-Mapping
 	public boolean isFeasibile(SubstrateNetwork sn, VirtualNetwork vn, Chromosome c) {
