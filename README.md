@@ -21,7 +21,7 @@ Technologies I personally have used are Java, JUnit, Gradle and Eclipse. For all
 
 ## Illustrations <br>
 
-<img src="https://user-images.githubusercontent.com/78420756/108925333-b2835980-763c-11eb-9033-9397d4b76256.jpg" width="260" height="360"> <img src="https://user-images.githubusercontent.com/78420756/108925264-8b2c8c80-763c-11eb-8d94-02c0e188d9f8.jpg" width="260" height="360"> <p>
+<img src="https://user-images.githubusercontent.com/78420756/108925333-b2835980-763c-11eb-9033-9397d4b76256.jpg" width="260" height="380"> <img src="https://user-images.githubusercontent.com/78420756/108925264-8b2c8c80-763c-11eb-8d94-02c0e188d9f8.jpg" width="260" height="380"> <p>
 Left: Virtual Network Request (VNR) Embedding. Right: Genetic algorithm for the embedding stage. 
   
 ## Examples of use <br>
