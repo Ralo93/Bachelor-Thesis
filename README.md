@@ -32,4 +32,4 @@ Use of the ALEVIN GUI. source: https://sourceforge.net/projects/alevin/ <p>
 Wrap up.
 ## Exclaimer <br>
 I felt like saying that my actual code is very messy. This was the first major open source project I tried to support with very little programming knowledge. While managing to get the GUI actually running my algorithm (after a challenging installation procedure for newcomers) and getting my expected results after partly minutes of runtime, I no longer had the strength to refactor anything. I hope you enjoy. <p>
-So be prepared looking at my code, I remember affectionately calling it "the battlefield". :)
+So be prepared looking at my code, I remember affectionately calling it "the battlefield"!
