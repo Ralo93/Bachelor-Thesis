@@ -6,9 +6,11 @@
 
 
 ## General info
+*** Improvement and Analysis of a Genetic Algorithm for the Virtual Network Embedding Problem *** <p>
+
 Interested in genetic algorithms or a starting point to explore the internet of tomorrow? <br>
 Then I encourage you to read the first chapter of the BachelorThesis.pdf above! <p>
-This project includes all files associated with my bachelor thesis - implementing a genetic algorithm for the virtual network embedding problem - , covering the PDF version of my thesis, the implemented code and an introduction to the ALEVIN2 environment. <p>
+This project includes all files associated with my bachelor thesis, covering the PDF version of my thesis, the implemented code and an introduction to the ALEVIN2 environment. <p>
 
 ## Sources
 The project I supported can be found at: https://sourceforge.net/projects/alevin/ from where I used v2.2. <br>
