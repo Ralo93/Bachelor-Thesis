@@ -11,6 +11,8 @@
 Interested in genetic algorithms or a starting point to explore the internet of tomorrow? <br>
 Then I encourage you to read the first chapter of the BachelorThesis.pdf above! <p>
 This project includes all files associated with my bachelor thesis, covering the PDF version of my thesis, the implemented code and an introduction to the ALEVIN2 environment. <p>
+I felt like saying that my actual code is very messy. This was the first major open source project I tried to support with very little programming knowledge. While managing to get the GUI actually running my algorithm (after a challenging installation procedure for newcomers) and getting my expected results after partly minutes of runtime, I no longer had the strength to refactor anything. <p>
+So be prepared looking at my code! I remember affectionately calling it "the battlefield".
 
 ## Sources
 The project I supported can be found at: https://sourceforge.net/projects/alevin/ from where I used v2.2. <br>
@@ -33,6 +35,3 @@ Use of the ALEVIN GUI. source: https://sourceforge.net/projects/alevin/ <p>
 
 ## Project status <br>
 Done.
-## Exclaimer <br>
-I felt like saying that my actual code is very messy. This was the first major open source project I tried to support with very little programming knowledge. While managing to get the GUI actually running my algorithm (after a challenging installation procedure for newcomers) and getting my expected results after partly minutes of runtime, I no longer had the strength to refactor anything. <p>
-So be prepared looking at my code! I remember affectionately calling it "the battlefield".
